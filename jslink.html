@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS link</title>
+</head>
+<body>
+    
+    <script>
+        let faq = {
+           answers : "<a href='img/img\media player.jpg'></a>",
+            link : "The capita is <a href='img/img\media player.jpg'></a>",
+        };
+
+        console.log(faq.answers);
+
+
+        let promise = new Promise(function(resolve, reject) {
+            setTimeout(() => reject("Can't read that boss or nigga in the house"), 8000);
+        });
+
+        promise.then(
+            function(result) {
+                console.log(result);
+            },
+
+            function(error) {
+                console.log(error);
+
+            }
+        );
+
+        new Promise((resolve, reject) => {
+            resolve("Ok, done maestro");
+        }).then((answer) => console.log(answer));
+
+
+        async function f() {
+            let promise = new Promise((resolve, reject) => {
+                resolve("ok, weldone bro. I love that");
+            });
+
+            let response = await promise;
+
+            console.log(response);
+        }
+
+        f();
+
+        new Promise((myResove, myReject) => {
+            myResove("You're starting REACT as early as possible today or tomorrow");
+        }).then(reply => console.log(reply));
+    </script>
+</body>
+</html>

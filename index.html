@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+      
+    <title>Document</title>
+    <style>
+     @font-face {
+         font-family: "Barlow";
+         src: url("barlow/Barlow-Bold.ttf") format("ttf");
+         font-weight: 400;
+     }
+
+     * {
+         font-family: "Barlow";
+     }
+        body {
+            font-family: barlow, sans-serif;
+        }
+
+        div {
+            font-family: "Font Awesome 5 Free Regular";
+        }
+    .row {
+    display: flex;
+    justify-content: space-between;
+    background-color: green;
+    padding: 8px;
+    margin: 0;
+    align-items: center;
+}
+        .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1s;   /* 0.5s */
+    padding-top: 60px;
+    border: 1px solid #111;
+    border-top-right-radius: 12px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+button {
+    padding: 12px;
+    background-color: yellow;
+    color: blue;
+    border-radius: 8px;
+    margin-left: 180px;
+    margin-top: 40px;
+    outline: none;
+}
+
+div.pooping--section {
+    border: 1px solid purple;
+    width: 40%;
+    height: 40px;
+    padding: 50px;
+    background-color: indianred;
+    position: absolute;
+    right: 0px;
+    top: 0;
+    z-index: 1;
+    transition: width 2s;
+    margin: 0;
+}
+
+div.pooping--section:hover {
+    width: 80%;
+}
+div.relative {
+    position: relative;
+    transition: 190s;
+}
+
+div.transition {
+    width: 50px;
+    height: 90px;
+    background-color: red;
+    border: 1px solid red;
+    padding: 12px;
+    
+}
+
+div.transition:hover {
+     width: 180px;
+     transition: 2s;
+     background-color: green;
+}
+
+div.grid {
+    display: grid;
+    margin-top: 80px;
+    grid-template: 80px 80px / 1fr 1fr 1fr;
+    gap: 1px;
+    
+}
+
+div.grid div {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+}
+
+div.grid :nth-child(even) {
+    border: 1px solid orangered;
+    background-color: orangered;
+    padding: 18px;
+}
+div.grid :nth-child(odd) {
+    border: 1px solid blueviolet;
+    background-color: rgba(0, 0, 222, 0.2);
+    
+}
+    </style>
+</head>
+<body>
+    <i class="fa fa-align-justify" style="font-size: 28px;"></i>
+    <i class="fas fa-ambulance" style="font-size: 50px;"></i>
+    <i class="fa fa-angle-left"></i>
+    <i class="fab fa-apple" style="font-size: 45px; color: red;"></i> <br /> <br />
+
+    <i class="fas fa-cart-plus" style="font-size: 30px;"></i> <br />
+
+    <i class="fab fa-google-play" style="color: #01d2c7; font-size: 40px;"></i>
+    <i class="fas fa-home" style="font-size: 25px; color: green;"></i>
+    <div class="fas fa-place-of-worship" style="color: indigo; font-size: 35px;"></div>
+    <div><i class="fas fa-bread-slice" style="font-size: 30px; color: purple;"></i></div>
+    <div><i class="fas fa-hamburger" style="color: red; font-size: 24px;"></i></div>
+    <div><i class="fas fa-ice-cream" style="font-size: 25px; color: blue;"></i></div>
+    <div><i class="fas fa-pizza-slice" style="font-size: 24px; color: orange;"></i></div>
+    <div><i class="fab fa-paypal"></i></div>
+    <i class="fas fa-arrow-down"></i>
+    <i class="fas fa-arrow-left"></i>
+    <i class="fas fa-arrow-right"></i>
+    <i class="fas fa-arrow-up"></i>
+    <i class="fa fa-check-circle" style="color: #01d2c7;"></i> 
+    <i class="fa fa-check-circle-o"></i>
+    <i class="fa fa-credit-card"></i>
+    <i class="fa fa-credit-card-alt"></i>
+    <i class="fa fa-envelope"></i>
+    <i class="fa fa-envelope-square"></i>
+    <i class="fa fa-sliders"></i>
+    <i class="fa fa-trash"></i>
+    <i class="fas fa-trash-alt"></i>
+    <i class="far fa-trash-alt"></i>
+    <i class="fas fa-pen"></i>
+    <i class="fas fa-pencil-alt"></i>
+    <i class="fa fa-cog"></i>
+    <i class="fa fa-gear"></i>
+    <i class="fa fa-plus-square" style="background-color: red;"></i>
+    <span>&#8212;</span>    
+    <span>&#36;</span>
+
+    <br /> <br />
+
+    <p>I LOVE YOU ALL</p>
+
+    <i class="fa fa-step-backward fa-2x"></i>
+    <i class="fa fa-play-circle fa-5x"></i>
+    <i class="fa fa-step-forward fa-2x"></i>
+</body>
+
+<h1>We love you</h1>
+<p>Dont tell anyone</p>
+
+<div>Dont tell anyone</div>
+
+
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:viod(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+    <a href="#">About</a> 
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+</div>  
+
+<div class="color row">
+    <div><i class=" fa fa-align-justify" style="font-size: 28px; cursor: pointer; margin-left: 2px;" onclick="openNav()"></i></div>
+    <div>Taste is the future</div>
+</div>
+
+<input type="text" value="please" style="color: red;"> <br /> <br /> <br />
+
+<button class="pop" id="popUp">Pup up onclick</button>
+ <div class="relative">
+   <div class="pooping--section" id="popDiv"></div>
+ </div> 
+
+ <div class="transition"></div>
+
+ <div class="grid">
+     <div>1</div>
+     <div>2</div>
+     <div>3</div>
+     <div>4</div>
+     <div>5</div>
+     <div>6</div>
+ </div>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = '100%' ;
+        document.getElementById("mySidenav").style.backgroundColor = "#111"
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = '0' ;
+        document.getElementById("mySidenav").style.background = 'white' ;
+    }
+
+    let hidden = document.querySelector('#popDiv').style.display = "none" ;
+
+    popUp.onclick = function() {
+        document.querySelector('#popDiv').style.display = "block" ;
+        document.querySelector('#popUp').style.backgroundColor = "red";
+    }
+</script>
+</html>

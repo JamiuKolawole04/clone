@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body>
+    <form name="form" action="./icon.html">
+        <input type="text" name="text">
+        <input type="password" name="password">
+        <button type="submit">Submit 2nd form</button>
+    </form>
+
+    <script>
+        const form = document.forms.form;
+        form.addEventListener("submit", (e) => {
+            const name = form.elements.text.value;
+            const password = form.elements.password.value;
+
+            if (name === "" || name === null) {
+                alert("Name can't be empty");
+                e.preventDefault()
+            } else if (password === "") {
+                alert("password can't be empty or less than 3 characters long");
+                e.preventDefault()
+            }
+
+        })
+
+        // form.onsubmit = () => {
+        //     return formSub();
+        // }
+
+        // form.addEventListener("submit", formSub)
+    </script>
+</body>
+
+
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.min.css">
+    <style>
+        /*
+        .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    float: left;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    margin-left: none;
+}
+.dropdown-content {
+    position: absolute;
+    display: none;
+    background-color: #ff6e30;
+    width: 150px;
+    margin-top: none;
+
+}
+
+.dropdown-content a {
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+    font-size: 12px;
+    color: black;
+
+}
+
+
+.dropdown-content a:hover{
+  background-color: #312c2c;
+  color: burlywood;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.toto {
+    color: red;
+    font-size: 25px;
+}
+*/
+
+body {
+    background-color: yellow;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 1s;   /* 0.5s */
+    padding-top: 60px;
+    border: 1px solid #111;
+    border-top-right-radius: 12px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.color {
+    background: green;
+    border: 1px solid green;
+    padding: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+   <!--
+     <div class="hidden">
+
+        <div class="dropdown">
+    
+          <button class="dropbtn" >  <i class="fas fa-align-justify toto" id="icon"></i></button>
+          <div class="dropdown-content">
+            <a href="#">Solo</a>
+            <a href="#">Downloads</a>
+            <a href="#">Prcing</a>
+            <a href="#">Features</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+            <a class="log" href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </div>   -->
+
+       
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:viod(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+            <a href="#">About</a> 
+            <a href="#">Services</a>
+            <a href="#">Clients</a>
+            <a href="#">Contact</a>
+        </div>  
+
+       <div class="color row"> <span style="font-size: 30px; cursor: pointer; margin-left: 30px;" onclick="openNav()">&#9776; </span>
+         <div><img src="last_logo.png"></div>
+         <div>I love my life</div>
+    </div>
+
+    <i class="fa fa-angle-down" style="color: white; font-size: 24px; width: 1200px;"></i>
+
+        <script>
+            function openNav() {
+                document.getElementById("mySidenav").style.width = '100%' ;
+                document.getElementById("mySidenav").style.backgroundColor = "#111"
+            }
+
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = '0' ;
+                document.getElementById("mySidenav").style.background = 'white' ;
+            }
+        </script>
+
+</body>
+</html>

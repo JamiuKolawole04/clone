@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        const number = [1, 2, 3, 4, 5];
+        const obj = {
+            brand: 'Ford',
+            model: 'Telsa',
+            color: 'orange',
+        }
+        const updatedObj = { ...obj, color: 'yellow' }
+
+        const obj2 = {
+            job: 'cloud dev',
+            platform: 'GCP',
+            status: 'Juniour'
+        }
+
+        const [one, two, ...rest] = number;
+        console.log(rest)
+        console.log(updatedObj)
+
+        const time = new Date().getMonth();
+        let current = 0;
+
+        // ternary operator
+        console.log(time === current ? true : false)
+
+    </script>
+</body>
+
+</html>
